@@ -1,17 +1,17 @@
 {
-    "name": "phpviet/number-to-words",
+    "name": "tungpham42/number-to-words",
     "type": "library",
     "description": "Thư viện hổ trợ chuyển đổi số sang chữ số.",
     "keywords": [
         "phpviet",
         "number-to-words"
     ],
-    "homepage": "https://github.com/phpviet/number-to-words",
+    "homepage": "https://github.com/tungpham42/number-to-words",
     "license": "MIT",
     "authors": [
         {
-            "name": "Vuong Xuong Minh",
-            "email": "vuongxuongminh@gmail.com"
+            "name": "Tung Pham",
+            "email": "tung.42@gmail.com"
         }
     ],
     "require": {
