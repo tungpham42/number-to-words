@@ -1,12 +1,12 @@
 <?php
 /**
- * @link https://github.com/phpviet/number-to-words
+ * @link https://github.com/tungpham42/number-to-words
  *
  * @copyright (c) PHP Viet
  * @license [MIT](http://www.opensource.org/licenses/MIT)
  */
 
-namespace PHPViet\NumberToWords\Concerns;
+namespace tungpham42\NumberToWords\Concerns;
 
 /**
  * @author Vuong Minh <vuongxuongminh@gmail.com>

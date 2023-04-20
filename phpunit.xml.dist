@@ -10,7 +10,7 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="PHP Viet Test Suite">
+        <testsuite name="Tung Pham Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

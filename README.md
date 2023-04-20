@@ -1,16 +1,16 @@
 <p align="center">
-    <a href="https://github.com/phpviet" target="_blank">
+    <a href="https://github.com/tungpham42" target="_blank">
         <img src="https://avatars0.githubusercontent.com/u/50674062" height="100px">
     </a>
     <h1 align="center">Number To Words</h1>
     <br>
     <p align="center">
-    <a href="https://packagist.org/packages/phpviet/number-to-words"><img src="https://img.shields.io/packagist/v/phpviet/number-to-words.svg?style=flat-square" alt="Latest version"></a>
-    <a href="https://travis-ci.org/phpviet/number-to-words"><img src="https://img.shields.io/travis/phpviet/number-to-words/master.svg?style=flat-square" alt="Build status"></a>
-    <a href="https://scrutinizer-ci.com/g/phpviet/number-to-words"><img src="https://img.shields.io/scrutinizer/g/phpviet/number-to-words.svg?style=flat-square" alt="Quantity score"></a>
+    <a href="https://packagist.org/packages/tungpham42/number-to-words"><img src="https://img.shields.io/packagist/v/tungpham42/number-to-words.svg?style=flat-square" alt="Latest version"></a>
+    <a href="https://travis-ci.org/tungpham42/number-to-words"><img src="https://img.shields.io/travis/tungpham42/number-to-words/master.svg?style=flat-square" alt="Build status"></a>
+    <a href="https://scrutinizer-ci.com/g/tungpham42/number-to-words"><img src="https://img.shields.io/scrutinizer/g/tungpham42/number-to-words.svg?style=flat-square" alt="Quantity score"></a>
     <a href="https://styleci.io/repos/189439149"><img src="https://styleci.io/repos/189439149/shield?branch=master" alt="StyleCI"></a>
-    <a href="https://packagist.org/packages/phpviet/number-to-words"><img src="https://img.shields.io/packagist/dt/phpviet/number-to-words.svg?style=flat-square" alt="Total download"></a>
-    <a href="https://packagist.org/packages/phpviet/number-to-words"><img src="https://img.shields.io/packagist/l/phpviet/number-to-words.svg?style=flat-square" alt="License"></a>
+    <a href="https://packagist.org/packages/tungpham42/number-to-words"><img src="https://img.shields.io/packagist/dt/tungpham42/number-to-words.svg?style=flat-square" alt="Total download"></a>
+    <a href="https://packagist.org/packages/tungpham42/number-to-words"><img src="https://img.shields.io/packagist/l/tungpham42/number-to-words.svg?style=flat-square" alt="License"></a>
     </p>
 </p>
 
@@ -23,16 +23,14 @@ Thư viện hổ trợ chuyển đổi số sang chữ số Tiếng Việt.
 Cài đặt Number To Words thông qua [Composer](https://getcomposer.org):
 
 ```bash
-composer require phpviet/number-to-words
+composer require tungpham42/number-to-words
 ```
 
 ## Cách sử dụng
 
 ### Tích hợp sẵn trên các framework phổ biến hiện tại
 
-- [`Laravel`](https://github.com/phpviet/laravel-number-to-words)
-- [`Symfony`](https://github.com/phpviet/symfony-number-to-words)
-- [`Yii`](https://github.com/phpviet/yii-number-to-words)
+- [`Laravel`](https://github.com/tungpham42/laravel-number-to-words)
 
 hoặc nếu bạn muốn sử dụng không dựa trên framework thì tiếp tục xem tiếp.
 
@@ -44,12 +42,12 @@ hoặc nếu bạn muốn sử dụng không dựa trên framework thì tiếp t
 
 ### Chuyển đổi số sang chữ số
 
-Thư viện cung cấp cho chúng ta lớp `PHPViet\NumberToWords\Transformer` để thực hiện việc chuyển đổi
+Thư viện cung cấp cho chúng ta lớp `tungpham42\NumberToWords\Transformer` để thực hiện việc chuyển đổi
 thông qua phương thức `toWords` của đối tượng:
 
 ```php
 
-use PHPViet\NumberToWords\Transformer;
+use tungpham42\NumberToWords\Transformer;
 
 $transformer = new Transformer();
 
@@ -99,12 +97,12 @@ $transformer->toWords(131050035);
 
 ### Chuyển đổi số sang tiền tệ
 
-Cũng như cách sử dụng của chuyển số sang chữ số ta cũng sử dụng lớp `PHPViet\NumberToWords\Transformer`
+Cũng như cách sử dụng của chuyển số sang chữ số ta cũng sử dụng lớp `tungpham42\NumberToWords\Transformer`
 để thực thi tác vụ:
 
 ```php
 
-use PHPViet\NumberToWords\Transformer;
+use tungpham42\NumberToWords\Transformer;
 
 $transformer = new Transformer();
 
@@ -120,7 +118,7 @@ $transformer->toCurrency(854000900);
 ```
 Trong một số loại tiền tệ, bạn cần thay đổi cách đọc theo đơn vị quy đổi, ví dụ 1 đô = 100 xen
 ```php
-use PHPViet\NumberToWords\Transformer;
+use tungpham42\NumberToWords\Transformer;
 
 // Đặt số chữ số phần thập phân (tham số đầu tiên Dictionary có thể null)
 $transformer = new Transformer(null, 2);
@@ -134,7 +132,7 @@ Ngoài ra ta còn có thể sử dụng đơn vị tiền tệ khác thông qua 
 
 ```php
 
-use PHPViet\NumberToWords\Transformer;
+use tungpham42\NumberToWords\Transformer;
 
 $transformer = new Transformer();
 
@@ -150,13 +148,13 @@ $transformer->toCurrency('8361.40', ['đô', 'xen']);
 
 ### Thay cách đọc số
 
-Trong thư viện ngoài cách đọc tiêu chuẩn còn hổ trợ cho chúng ta lớp `PHPViet\NumberToWords\SouthDictionary` 
+Trong thư viện ngoài cách đọc tiêu chuẩn còn hổ trợ cho chúng ta lớp `tungpham42\NumberToWords\SouthDictionary` 
 giúp đọc số theo phong cách trong Nam:
 
 ```php
 
-use PHPViet\NumberToWords\Transformer;
-use PHPViet\NumberToWords\SouthDictionary;
+use tungpham42\NumberToWords\Transformer;
+use tungpham42\NumberToWords\SouthDictionary;
 
 $transformer = new Transformer();
 $southDictionary = new SouthDictionary();
@@ -176,12 +174,12 @@ $southTransformer->toCurrency(124001); // một trăm hai mươi bốn ngàn kh�
 ```
 
 Nếu như bạn muốn thay đổi cách đọc theo ý bạn thì hãy tạo một lớp `Dictionary` kế thừa
-`PHPViet\NumberToWords\Dictionary` hoặc thực thi mẫu trừu tượng `PHPViet\NumberToWords\DictionaryInterface`:
+`tungpham42\NumberToWords\Dictionary` hoặc thực thi mẫu trừu tượng `tungpham42\NumberToWords\DictionaryInterface`:
 
 ```php
 
-use PHPViet\NumberToWords\Dictionary;
-use PHPViet\NumberToWords\Transformer;
+use tungpham42\NumberToWords\Dictionary;
+use tungpham42\NumberToWords\Transformer;
 
 class MyDictionary extends Dictionary {
 

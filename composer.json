@@ -3,7 +3,7 @@
     "type": "library",
     "description": "Thư viện hổ trợ chuyển đổi số sang chữ số.",
     "keywords": [
-        "phpviet",
+        "tungpham42",
         "number-to-words"
     ],
     "homepage": "https://github.com/tungpham42/number-to-words",
@@ -23,12 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "PHPViet\\NumberToWords\\": "src"
+            "tungpham42\\NumberToWords\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PHPViet\\NumberToWords\\Tests\\": "tests"
+            "tungpham42\\NumberToWords\\Tests\\": "tests"
         }
     },
     "scripts": {

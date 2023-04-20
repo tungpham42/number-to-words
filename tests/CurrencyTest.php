@@ -1,14 +1,14 @@
 <?php
 /**
- * @link https://github.com/phpviet/number-to-words
+ * @link https://github.com/tungpham42/number-to-words
  *
  * @copyright (c) PHP Viet
  * @license [MIT](http://www.opensource.org/licenses/MIT)
  */
 
-namespace PHPViet\NumberToWords\Tests;
+namespace tungpham42\NumberToWords\Tests;
 
-use PHPViet\NumberToWords\Transformer;
+use tungpham42\NumberToWords\Transformer;
 
 /**
  * @author Vuong Minh <vuongxuongminh@gmail.com>
